@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - Space
+  - Planets
+  - Stars
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Space
+    uniqueID: 531235411
+    locked: 0
+  - name: Stars
+    uniqueID: 1049723157
+    locked: 0
+  - name: Planets
+    uniqueID: 4022505651
+    locked: 0
+  - name: Player
+    uniqueID: 1695061379
+    locked: 0
