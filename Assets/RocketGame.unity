@@ -517,10 +517,47 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 439095606, guid: 442f7bd88d17a45218fe55d6005c6c12, type: 3}
+      propertyPath: Sprites.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 439095606, guid: 442f7bd88d17a45218fe55d6005c6c12, type: 3}
       propertyPath: ammoObject
       value: 
       objectReference: {fileID: 727911724210024827, guid: 71057818c634f44cdb562382ce027b6a,
         type: 3}
+    - target: {fileID: 439095606, guid: 442f7bd88d17a45218fe55d6005c6c12, type: 3}
+      propertyPath: Sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -2926887839613767034, guid: 99f7e7d003df44508be12c32ed1ec60c,
+        type: 3}
+    - target: {fileID: 439095606, guid: 442f7bd88d17a45218fe55d6005c6c12, type: 3}
+      propertyPath: Sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 8020332397451517873, guid: 99f7e7d003df44508be12c32ed1ec60c,
+        type: 3}
+    - target: {fileID: 439095606, guid: 442f7bd88d17a45218fe55d6005c6c12, type: 3}
+      propertyPath: Sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 6544568933519880883, guid: 99f7e7d003df44508be12c32ed1ec60c,
+        type: 3}
+    - target: {fileID: 439095606, guid: 442f7bd88d17a45218fe55d6005c6c12, type: 3}
+      propertyPath: Sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -5308440788202615073, guid: 99f7e7d003df44508be12c32ed1ec60c,
+        type: 3}
+    - target: {fileID: 439095606, guid: 442f7bd88d17a45218fe55d6005c6c12, type: 3}
+      propertyPath: Sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -1777617952289007304, guid: 99f7e7d003df44508be12c32ed1ec60c,
+        type: 3}
+    - target: {fileID: 439095606, guid: 442f7bd88d17a45218fe55d6005c6c12, type: 3}
+      propertyPath: EnemyObject
+      value: 
+      objectReference: {fileID: 1982632736}
+    - target: {fileID: 439095606, guid: 442f7bd88d17a45218fe55d6005c6c12, type: 3}
+      propertyPath: SpriteRenderer
+      value: 
+      objectReference: {fileID: 1982632737}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 442f7bd88d17a45218fe55d6005c6c12, type: 3}
 --- !u!1 &1584224318
@@ -6038,6 +6075,52 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1982632736 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6212249732328726456, guid: 42feb8391343943e5ad22a4da77bfcaa,
+    type: 3}
+  m_PrefabInstance: {fileID: 2071024792306724366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1982632737 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4555541048004047486, guid: 42feb8391343943e5ad22a4da77bfcaa,
+    type: 3}
+  m_PrefabInstance: {fileID: 2071024792306724366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1982632742
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982632736}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66514eefa959d4936824cf3c1962b138, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &1982632743
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982632736}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b8f6f694efb784539ab54ba429d36584, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &2071024792306724366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6058,7 +6141,7 @@ PrefabInstance:
     - target: {fileID: 7391634898528431019, guid: 42feb8391343943e5ad22a4da77bfcaa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 5.94
       objectReference: {fileID: 0}
     - target: {fileID: 7391634898528431019, guid: 42feb8391343943e5ad22a4da77bfcaa,
         type: 3}

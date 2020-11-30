@@ -15,11 +15,18 @@ public class Player : MonoBehaviour
     Rigidbody2D rb2d;
 
 
+    public Sprite[] Sprites;
+    public GameObject EnemyObject;
+    public SpriteRenderer SpriteRenderer;
+    List<GameObject> EnemyList;
+
+
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         ammoObjectList = new List<GameObject>();
+        EnemyList = new List<GameObject>();
 
         for(int i =0; i < 10; i++)
         {
@@ -29,6 +36,20 @@ public class Player : MonoBehaviour
         {
             Ammo.SetActive(false);
         }
+
+        for(int i = 0; i < 7; i++)
+        {
+            EnemyList.Add((GameObject)Instantiate(EnemyObject, new Vector3(-5, Random.Range(LimitLeft, LimitRight)), Quaternion.identity));
+        }
+        foreach(GameObject Enemy in EnemyList)
+        {
+            Enemy.SetActive(false);
+        }
+    }
+
+    void Update()
+    {
+        StartCoroutine("EnemyContorller", 0.01f);
     }
 
     // Update is called once per frame
@@ -94,6 +115,34 @@ public class Player : MonoBehaviour
             else
             {
                 Debug.Log("Ammo Controller" + ammoOBJ.activeSelf);
+            }
+        }
+        yield return new WaitForSeconds(time);
+    }
+
+    IEnumerator EnemyContorller(float time = 0.1f)
+    {
+        foreach(GameObject Enemy in EnemyList)
+        {
+            if (Enemy.activeSelf)
+            {
+                if(Enemy.transform.position.y < -5)
+                {
+                    Enemy.SetActive(false);
+                    Enemy.transform.position = new Vector3(Random.Range(LimitLeft, LimitRight), 5);
+                }
+            }
+            else
+            {
+                if(Enemy.transform.position.y > -5)
+                {
+                    SpriteRenderer = Enemy.GetComponent<SpriteRenderer>();
+                    Enemy.SetActive(true);
+                    SpriteRenderer.sprite = Sprites[Random.Range(0, 4)];
+                    Enemy.transform.position = new Vector3(Random.Range(LimitLeft, LimitRight), 5);
+
+
+                }
             }
         }
         yield return new WaitForSeconds(time);

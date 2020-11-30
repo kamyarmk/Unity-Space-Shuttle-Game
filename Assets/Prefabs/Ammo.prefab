@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5463338395062626299}
   - component: {fileID: 5086830376358090107}
   - component: {fileID: 7566063809813575190}
+  - component: {fileID: 6823747414409262607}
   m_Layer: 0
   m_Name: Ammo
   m_TagString: Untagged
@@ -130,3 +131,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6823747414409262607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727911724210024827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42dc95278de7c4bab86ed80c5c8745b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
